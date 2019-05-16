@@ -1,5 +1,6 @@
 ﻿//Created by Starflash Studios, 2017-19
-//This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+//This work is licensed under the GNU General Public License V3.0
+//The GNU General Public License is a free, copyleft license for software and other kinds of works.
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -25,7 +26,7 @@ public static class NeoLib {
 
     public static bool IsElevated {
         get { return WindowsIdentity.GetCurrent().Owner.IsWellKnown(WellKnownSidType.BuiltinAdministratorsSid); }
-    }
+    }    
 
     public static void Show(this Window value, Window r) {
         r.Hide();
